@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StartActivity">
-    <SurfaceView
+    tools:context=".StartActivity"
+    android:layout_gravity="center"
+    android:id="@+id/root">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/surfaceView"/>
-
-
+        android:background="#000"
+        tools:context="com.example.szr.fingerheart.CameraActivity" />
 
 </RelativeLayout>
